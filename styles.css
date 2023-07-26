@@ -1,0 +1,163 @@
+.logo {
+    width: 80px;
+    height: 70px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem5 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem6 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem7 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+#navItem8 {
+    color: #323f4b;
+    font-family: 'Roboto';
+}
+
+.banner-section-bg-container {
+    background-image: url("Banner.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+}
+.color-button {
+    color: black;
+    font-weight: bold;
+    background-image: linear-gradient(#c21d2b, #f5f4f1);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.explore-menu-section {
+    background-color: white;
+}
+
+.menu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu-item-image {
+    border-radius: 16px;
+    height: 50vh;
+    width: 60vw;
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+}
+.footer-logo{
+    height: 100px;
+    width: 120px;
+}
+.footer-section {
+    background-color: #f90452;
+}
+.footer-section-icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 15px;
+    background-color: #202b36;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.icon {
+    color: white;
+    font-size: 18px;
+}
+.footer-section-text {
+    color: black;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-section-heading {
+    color: black;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-section-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hr-line {
+    background-color: black;
+}
+
+.footer-section-copyright {
+    color: black;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 16px;
+}
+

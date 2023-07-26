@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f4eeee;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="carlogo.png" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#">Home </a>
+                    <a class="nav-link" id="navItem2" href="#">
+                        Categories
+                    </a>
+                    <a class="nav-link" id="navItem3" href="#">Products</a>
+                    <a class="nav-link" id="navItem4" href="#">About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="banner-section-bg-container" class="banner-section-bg-container d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">
+                We Sell Car Parts
+            </h1>
+            <button class="color-button" onclick="display('sectionDetailsPage')">Book Now</button>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Categories</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/premium-photo/various-car-parts-accessories-isolated-white-background_771335-35715.jpg?w=1060" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Spare Parts</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/premium-photo/worker-washing-red-car-with-sponge-car-wash_179755-10792.jpg?w=996" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Wash</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/emergency-power-jump-starter-clip-connection-wire-kit-clamps-blue-car-battery-isometric-set-isolated-vector-illustration_1284-68706.jpg?w=740&t=st=1689841434~exp=1689842034~hmac=3ef2fcb6e1373a585dafcf27fce79934429e147f0d42d37338455ad868a2e02b" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Batteries</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/various-work-tools-worktop_1170-1505.jpg?w=996&t=st=1689841102~exp=1689841702~hmac=4e169f19a18c93a0b13e103f9716513b0f67341364e4515af504fc8bec26b5b5" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Used Parts</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/car-rental-concept-illustration_114360-9267.jpg?w=996&t=st=1689842039~exp=1689842639~hmac=a767263933e1158e1467fbb5ec7cb5b97fb0c0e310d4a61dd3f02634b61bf7d6" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Rentals</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/flat-icons-set-different-workers-car_1284-17205.jpg?size=626&ext=jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Maintainence</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/vehicle-sale-concept-illustration_114360-1634.jpg?size=626&ext=jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Used Cars</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-vector/car-wheels-realistic-design-concept_1284-29775.jpg?w=740&t=st=1690197752~exp=1690198352~hmac=8a06001e9218283a22c7b6c160dd5627e26776e481e1f7192a1ab6ca06719754" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Tyres</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/service-worker-painting-car-auto-service_23-2149487041.jpg?w=996&t=st=1690197688~exp=1690198288~hmac=2c4af2fd6a511a0e59041693ad5b1a1d01d36dde75ec4e0328bd8a66714df9aa" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Car Painting</h1>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-section" class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="text-center text-md-left">
+                        <img src="carlogo.png" class="footer-logo" />
+                        <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
+                            <div class="footer-section-icon-container">
+                                <i class="fab fa-google icon"></i>
+                            </div>
+                            <div class="footer-section-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="footer-section-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="footer-section-icon-container">
+                                <i class="fa fa-linkedin-square icon"></i>
+                            </div>
+                        </div>
+                        <p class="footer-section-text">
+                            14-61/1, Hyderabad, Telangana.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mt-3">
+                    <h1 class="footer-section-heading pb-2">Contact Us</h1>
+                    <ul class="footer-section-list">
+                        <li class="mb-3">
+                            <i class="fa fa-envelope icon mr-2"></i>
+                            <span class="footer-section-text">test@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-phone icon mr-2"></i>
+                            <span class="footer-section-text">+974 7092 4454</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-skype icon mr-2"></i>
+                            <span class="footer-section-text">Mirza Mehadi Abbas</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 mt-3">
+                    <h1 class="footer-section-heading pb-2">Let Us Help You</h1>
+                    <ul class="footer-section-list">
+                        <li class="footer-section-text">100% Purchase Protection</li>
+                        <li class="footer-section-text">Your Account</li>
+                        <li class="footer-section-text">Return Centre</li>
+                        <li class="footer-section-text">Help</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="hr-line" />
+            <div class="text-center">
+                <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                <span class="vr-footer-section-copyright">2023 by Zaheda. Created with Bootstrap.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
